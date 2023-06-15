@@ -1,0 +1,13 @@
+@use './partials/mixin' as *; 
+@use './partials/variables' as *; 
+
+
+
+.flex{
+    display: flex;
+    flex-direction: row;
+}
+
+.mg-auto{
+    margin: 0 auto;
+}
