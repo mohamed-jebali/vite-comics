@@ -13,7 +13,10 @@
                         SHOPS
                     </h2>
                     <ul>
-                        <li v-for="liElements in headerList">{{liElements}}</li>
+                        <li>
+                            <li>Shop DC</li>
+                        <li>Shop Collectibles</li>
+                        </li>
                     </ul>
                 </nav>
                 <nav class='list-footer'>
@@ -34,7 +37,7 @@
                 </nav>
             </div>
             <div class='brand'>
-                <img src="../../public/img/dc-logo-bg.png" alt="dc-logo-background">
+                <!-- <img src="../../public/img/dc-logo-bg.png" alt="dc-logo-background"> -->
             </div>
         </footer>
     </div>
@@ -64,11 +67,12 @@ h2{
 }
 
 .brand{
-    margin-top: -10rem;
     z-index: 0;
-    img{
-        height: 450px;
-    }
+    background-image: url(/public/img/dc-logo-bg.png);
+    background-size: contain;
+    height: 450px;
+    width: 50%;
+    background-repeat: no-repeat;
 }
 
 .list-wrapper{
@@ -80,7 +84,8 @@ h2{
 
 .container-footer-top{
     background-image: url(../../public/img/footer-bg.jpg);
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 footer{
