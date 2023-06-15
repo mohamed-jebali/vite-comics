@@ -17,7 +17,7 @@ import { createApp } from 'vue'
 export default{
     data(){
         return{
-            headerList:["CHARACTERS","COMICS","MOVIES","TV","GAMES",,"COLLECTIBLES","VIDEOS","FANS","NEWS","SHOP"]
+            headerList:["CHARACTERS","COMICS","MOVIES","TV","GAMES","COLLECTIBLES","VIDEOS","FANS","NEWS","SHOP"]
         }
     },
     methods:{
@@ -44,7 +44,7 @@ ul{
     li{
         @include flex();
         color : $DcNavColor;
-        margin-right: 1rem;
+        margin-right: 1.5rem;
         font-size: 0.65rem;
         font-weight: 600;
 

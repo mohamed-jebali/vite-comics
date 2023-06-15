@@ -4,6 +4,7 @@ import AppHeader from './components/AppHeader.vue'
 import AppContent from './components/AppContent.vue'
 import AppBonus from './components/AppBonus.vue'
 import AppFooterTop from './components/AppFooterTop.vue'
+import AppFooterBottom from './components/AppFooterBottom.vue'
 
 
 export default{
@@ -11,7 +12,8 @@ export default{
     AppHeader,
     AppContent,
     AppBonus,
-    AppFooterTop
+    AppFooterTop,
+    AppFooterBottom
   }
 }
 
@@ -22,6 +24,7 @@ export default{
     <AppContent/>
     <AppBonus/>
     <AppFooterTop/>
+    <AppFooterBottom/>
 </template>
 
 <style lang="scss">
@@ -32,6 +35,9 @@ export default{
   box-sizing: border-box;
 }
 
+body{
+  font-family: 'Fira Sans', sans-serif;
+}
 
 ul{
   list-style-type: none;

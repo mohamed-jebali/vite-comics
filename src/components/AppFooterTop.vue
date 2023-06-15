@@ -80,7 +80,6 @@ h2{
 
 .container-footer-top{
     background-image: url(../../public/img/footer-bg.jpg);
-    background-repeat: no-repeat;
     background-size: contain;
 }
 
