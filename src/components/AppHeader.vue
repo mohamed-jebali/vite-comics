@@ -17,7 +17,7 @@ import { createApp } from 'vue'
 export default{
     data(){
         return{
-            headerList:["CHARACTERS","COMICS","MOVIES","TV","GAMES",,"COLLECTIBLES",,"VIDEOS","FANS","NEWS","SHOP"]
+            headerList:["CHARACTERS","COMICS","MOVIES","TV","GAMES",,"COLLECTIBLES","VIDEOS","FANS","NEWS","SHOP"]
         }
     },
     methods:{
@@ -28,7 +28,7 @@ export default{
 </script>
 <style lang="scss" scoped>
 @use '../styles/partials/mixin' as *; 
-@use '../styles/partials/variables' as *; 
+@use '../styles/partials/variables' as *;
 
 
 .container-header{
@@ -36,7 +36,6 @@ export default{
 }
 
 header{
-    border:1px solid black;
     @include flex(row,space-between);
 }
 

@@ -1,11 +1,13 @@
 <script>
 import './styles/general.scss'
 import AppHeader from './components/AppHeader.vue'
+import AppContent from './components/AppContent.vue'
 
 
 export default{
   components:{
-    AppHeader
+    AppHeader,
+    AppContent
   }
 }
 
@@ -13,9 +15,18 @@ export default{
 
 <template>
   <AppHeader/>
+  <AppContent/>
 </template>
 
 <style lang="scss">
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
 ul{
   list-style-type: none;
 }
