@@ -68,7 +68,7 @@ h2{
 
 .brand{
     z-index: 0;
-    background-image: url(/public/img/dc-logo-bg.png);
+    background-image: url(../assets/img/dc-logo-bg.png);
     background-size: contain;
     height: 450px;
     width: 50%;
@@ -83,7 +83,7 @@ h2{
 }
 
 .container-footer-top{
-    background-image: url(../../public/img/footer-bg.jpg);
+    background-image: url(../assets/img/footer-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }

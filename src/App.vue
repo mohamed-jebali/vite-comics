@@ -29,6 +29,11 @@ export default{
 
 <style lang="scss">
 
+
+  // GOOGLE FONTS
+  // SANS CAPTION
+  @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap');
+
 *{
   margin: 0;
   padding: 0;
@@ -36,10 +41,14 @@ export default{
 }
 
 body{
-  font-family: 'Fira Sans', sans-serif;
+  font-family: 'PT Sans Caption', sans-serif;
 }
 
 ul{
   list-style-type: none;
+}
+
+a{
+  text-decoration: none;
 }
 </style>

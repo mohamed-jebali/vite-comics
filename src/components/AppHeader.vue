@@ -2,11 +2,13 @@
     <div class='container-header mg-auto'>     
         <header class="flex">
             <div class='brand'>
-                <img src="../../public/img/dc-logo.png" alt="dc-logo">
+                <img src="../assets/img/dc-logo.png" alt="dc-logo">
             </div>
             <nav class='navbar-header'>
                 <ul class='flex'>
-                    <li v-for="liElements in headerList">{{liElements}}</li>
+                    <li v-for="liElements in headerList">
+                        {{liElements}}
+                    </li>
                 </ul>
             </nav>
         </header>
@@ -40,6 +42,7 @@ header{
     margin: 1rem 0;
 }
 
+
 ul{
     li{
         @include flex();
@@ -52,6 +55,9 @@ ul{
             text-decoration: underline;
         }
     }
+    li:nth-child(2){
+            color: $DcColorBlue;
+        }
 }
 
 </style>
