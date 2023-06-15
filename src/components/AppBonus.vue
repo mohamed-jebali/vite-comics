@@ -2,7 +2,7 @@
     <div class='content-container'>
         <div class='title-content mg-auto'>
             <h1>
-            -> Content goes here --
+            BONUS
             </h1>
         </div>
     </div>
@@ -28,10 +28,11 @@ export default{
 
 div.content-container{
     color: white;
-    background-color: black;
+    background-color: $DcColorBlue;
     padding: 4rem;
 
     h1{
+        text-align: center;
         font-size: 2rem;
     }
     .title-content{

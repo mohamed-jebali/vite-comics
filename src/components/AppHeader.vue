@@ -32,11 +32,12 @@ export default{
 
 
 .container-header{
-    max-width: 1200px;
+    max-width: 1000px;
 }
 
 header{
     @include flex(row,space-between);
+    margin: 1rem 0;
 }
 
 ul{
@@ -44,6 +45,12 @@ ul{
         @include flex();
         color : $DcNavColor;
         margin-right: 1rem;
+        font-size: 0.65rem;
+        font-weight: 600;
+
+        &:hover{
+            text-decoration: underline;
+        }
     }
 }
 
