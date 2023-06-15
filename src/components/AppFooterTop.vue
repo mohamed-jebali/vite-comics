@@ -1,6 +1,6 @@
 <template>
     <div class='container-footer-top'>     
-        <footer class="mg-auto flex">
+        <footer class="mg-auto flex flex-nowrap">
             <div class="list-wrapper flex">
                 <nav class='list-footer'>
                     <h2>
@@ -67,11 +67,14 @@ h2{
 }
 
 .brand{
-    z-index: 0;
-    background-image: url(../assets/img/dc-logo-bg.png);
-    background-size: contain;
-    height: 450px;
-    width: 50%;
+    position: relative;
+    left: 55px;
+    z-index: 1;
+    background-image: url(/src/assets/img/dc-logo-bg.png);
+    background-size: 534px;
+    background-position: 27px;
+    height: 427px;
+    width: 57%;
     background-repeat: no-repeat;
 }
 
