@@ -1,16 +1,40 @@
 <template>
     <div class='container-footer-top'>     
-        <footer class="mg-auto">
-            <nav class='list-footer'>
-                <h2>
-                    DC COMICS
-                </h2>
-                <ul>
-                    <li v-for="liElements in headerList">{{liElements}}</li>
-                </ul>
-            </nav>
+        <footer class="mg-auto flex">
+            <div class="list-wrapper flex">
+                <nav class='list-footer'>
+                    <h2>
+                        DC COMICS
+                    </h2>
+                    <ul>
+                        <li v-for="liElements in headerList">{{liElements}}</li>
+                    </ul>
+                    <h2>
+                        SHOPS
+                    </h2>
+                    <ul>
+                        <li v-for="liElements in headerList">{{liElements}}</li>
+                    </ul>
+                </nav>
+                <nav class='list-footer'>
+                    <h2>
+                        DC
+                    </h2>
+                    <ul>
+                        <li v-for="liElements in headerList">{{liElements}}</li>
+                    </ul>
+                </nav>
+                <nav class='list-footer'>
+                    <h2>
+                        SITES
+                    </h2>
+                    <ul>
+                        <li v-for="liElements in headerList">{{liElements}}</li>
+                    </ul>
+                </nav>
+            </div>
             <div class='brand'>
-                <img src="../../public/img/dc-logo-bg.png" alt="dc-logo">
+                <img src="../../public/img/dc-logo-bg.png" alt="dc-logo-background">
             </div>
         </footer>
     </div>
@@ -36,19 +60,28 @@ export default{
 
 h2{
     color: white;
+    margin-bottom: 1.5rem;
 }
 
 .brand{
+    margin-top: -10rem;
+    z-index: 0;
     img{
-        width: 70%;
+        height: 450px;
     }
+}
+
+.list-wrapper{
+    padding-top: 3rem;
+}
+.list-footer{
+    margin-right: 2rem;
 }
 
 .container-footer-top{
     background-image: url(../../public/img/footer-bg.jpg);
     background-repeat: no-repeat;
     background-size: contain;
-    height: 600px;
 }
 
 footer{
@@ -61,8 +94,7 @@ ul{
         @include flex(column,center,start);
         color : $DcFooterColorFont;
         margin-right: 1rem;
-        font-size: 0.65rem;
-        font-weight: 600;
+        font-size: 0.6rem;
         margin-bottom: 0.5rem;
 
         &:hover{

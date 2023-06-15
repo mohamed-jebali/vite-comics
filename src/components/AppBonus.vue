@@ -26,6 +26,7 @@ export default{
 @use '../styles/partials/variables' as *;
 
 
+
 div.content-container{
     color: white;
     background-color: $DcColorBlue;
