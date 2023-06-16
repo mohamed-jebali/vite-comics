@@ -1,10 +1,16 @@
 <template lang="">
     <div class='content'>
         <div class='container mg-auto'>
+            <button class='current-series'>
+                   CURRENT SERIES
+            </button>
             <div class='flex list-comic'>
                 <AppComics v-for="item in listComics"
                 :elementComics='item'
                 />
+                <button>
+                    Load More
+                </button>
             </div>
         </div>
     </div>
@@ -181,7 +187,7 @@ export default{
 div.content{
     color: white;
     background-color: black;
-    padding: 4rem;
+    padding: 2rem;
 
     h1{
         font-size: 2rem;
@@ -191,7 +197,22 @@ div.content{
     }
 }
 .list-comic{
-    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+}
+button{
+    margin: auto;
+    padding: 0.9rem 3rem;
+    background-color: $DcColorBlue;
+    color: white;
+    border: none;
+    font-family: 'PT Sans Caption', sans-serif;
+    font-weight: bolder;
+}
+.current-series{
+    position: relative;
+    bottom: 50px;
+    font-size: 1.1rem;
 }
 
 </style>

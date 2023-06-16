@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="container-card">
         <img :src="elementComics.thumb" alt="images-comics">
         <p>
             {{ elementComics.series }}
@@ -22,29 +22,26 @@ export default{
 @use '../styles/partials/variables' as *;
 
 
-.container{
-    width: 70%;
-    display: flex;
-    flex-wrap: wrap;
-}
+div.container-card{
+    
+    margin-bottom: 1rem;
+    width: calc(100% / 6 );
 
-
-
-div{
-    width: calc(100% / 6);
     img{
-            height: 200px;
+            height: 180px;
+            width: 150px;
+            object-fit: cover;
         }
 }
 p{
         
         margin-right: 1.5rem;
-        font-size: 0.65rem;
-        font-weight: 600;
+        font-size: 0.85rem;
 
         &:hover{
             text-decoration: underline;
         }
     }
+
 
 </style>
