@@ -5,15 +5,18 @@ import AppContent from './components/AppContent.vue'
 import AppBonus from './components/AppBonus.vue'
 import AppFooterTop from './components/AppFooterTop.vue'
 import AppFooterBottom from './components/AppFooterBottom.vue'
+import AppJumbotron from './components/AppJumbotron.vue'
 
 
 export default{
+  name:"App",
   components:{
     AppHeader,
     AppContent,
     AppBonus,
     AppFooterTop,
-    AppFooterBottom
+    AppFooterBottom,
+    AppJumbotron
   }
 }
 
@@ -21,6 +24,7 @@ export default{
 
 <template>
     <AppHeader/>
+    <AppJumbotron/>
     <AppContent/>
     <AppBonus/>
     <AppFooterTop/>

@@ -1,11 +1,11 @@
 <template lang="">
     <div class='content'>
         <div class='container mg-auto'>
-            <ul class='flex'>
+            <div class='flex list-comic'>
                 <AppComics v-for="item in listComics"
                 :elementComics='item'
                 />
-            </ul>
+            </div>
         </div>
     </div>
 </template>
@@ -189,6 +189,9 @@ div.content{
     .title-content{
         max-width: 1000px;
     }
+}
+.list-comic{
+    width: 60%;
 }
 
 </style>

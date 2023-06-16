@@ -1,12 +1,15 @@
 <template>
-    <li>
-        {{ elementComics.series }}
-    </li>
+    <div class="container">
+        <img :src="elementComics.thumb" alt="images-comics">
+        <p>
+            {{ elementComics.series }}
+        </p>
+    </div>
 </template>
 <script>
 import { createApp } from 'vue'
 export default{
-        name:'AppComics',
+    name:'AppComics',
     props:{
         elementComics:String
     },
@@ -19,19 +22,22 @@ export default{
 @use '../styles/partials/variables' as *;
 
 
-.container-header{
-    max-width: 1000px;
-}
-
-header{
-    @include flex(row,space-between);
-    margin: 1rem 0;
+.container{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 
-ul{
-    li{
-        @include flex();
+
+div{
+    width: calc(100% / 6);
+    img{
+            height: 200px;
+        }
+}
+p{
+        
         margin-right: 1.5rem;
         font-size: 0.65rem;
         font-weight: 600;
@@ -40,6 +46,5 @@ ul{
             text-decoration: underline;
         }
     }
-}
 
 </style>
