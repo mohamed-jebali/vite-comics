@@ -2,7 +2,7 @@
     <div class="container-card">
         <img :src="elementComics.thumb" alt="images-comics">
         <p>
-            {{ elementComics.series }}
+            {{ elementComics.series.toUpperCase() }}
         </p>
     </div>
 </template>
@@ -24,19 +24,19 @@ export default{
 
 div.container-card{
     
-    margin-bottom: 1rem;
+    margin-bottom: 4rem;
     width: calc(100% / 6 );
 
     img{
-            height: 180px;
+            height: 160px;
             width: 150px;
-            object-fit: cover;
         }
 }
-p{
-        
+p{    
+        margin-top: 0.8rem;
         margin-right: 1.5rem;
-        font-size: 0.85rem;
+        font-size: 0.7rem;
+        width: 160px;
 
         &:hover{
             text-decoration: underline;

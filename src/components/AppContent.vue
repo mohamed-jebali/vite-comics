@@ -186,7 +186,7 @@ export default{
 
 div.content{
     color: white;
-    background-color: black;
+    background-color: #1c1c1c;
     padding: 2rem;
 
     h1{
