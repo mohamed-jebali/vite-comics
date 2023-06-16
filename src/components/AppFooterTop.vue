@@ -7,16 +7,13 @@
                         DC COMICS
                     </h2>
                     <ul>
-                        <li v-for="liElements in headerList">{{liElements}}</li>
+                        <li v-for="liElements in dcComics">{{liElements}}</li>
                     </ul>
                     <h2>
                         SHOPS
                     </h2>
                     <ul>
-                        <li>
-                            <li>Shop DC</li>
-                        <li>Shop Collectibles</li>
-                        </li>
+                        <li v-for="liElements in shops">{{liElements}}</li>
                     </ul>
                 </nav>
                 <nav class='list-footer'>
@@ -24,7 +21,7 @@
                         DC
                     </h2>
                     <ul>
-                        <li v-for="liElements in headerList">{{liElements}}</li>
+                        <li v-for="liElements in dc">{{liElements}}</li>
                     </ul>
                 </nav>
                 <nav class='list-footer'>
@@ -32,12 +29,12 @@
                         SITES
                     </h2>
                     <ul>
-                        <li v-for="liElements in headerList">{{liElements}}</li>
+                        <li v-for="liElements in sites">{{liElements}}</li>
                     </ul>
                 </nav>
             </div>
             <div class='brand'>
-                <!-- <img src="../../public/img/dc-logo-bg.png" alt="dc-logo-background"> -->
+
             </div>
         </footer>
     </div>
@@ -47,7 +44,10 @@ import { createApp } from 'vue'
 export default{
     data(){
         return{
-            headerList:["CHARACTERS","COMICS","MOVIES","TV","GAMES",,"COLLECTIBLES","VIDEOS","FANS","NEWS","SHOP"]
+            dcComics:["CHARACTERS","COMICS","MOVIES","TV","GAMES","VIDEOS","FANS","NEWS"],
+            dc:["Term of Use","Privacy policy (New)","Ad Choices","Advertising","Jobs","Subscription","Talent Workshops","CPSC Certificates","Ratings","Shop Help","Contact Us"],
+            sites:["DC","MAD Magazine","Dc Kids","DC Universe","DC Power Visa"],
+            shops:["Shop DC","Shop Collectibles"]
         }
     },
     methods:{

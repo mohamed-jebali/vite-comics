@@ -1,5 +1,5 @@
 <template lang="">
-    <div class='container-header mg-auto'>     
+    <div class='container mg-auto'>     
         <header class="flex">
             <div class='brand'>
                 <img src="../assets/img/dc-logo.png" alt="dc-logo">
@@ -33,13 +33,21 @@ export default{
 @use '../styles/partials/variables' as *;
 
 
-.container-header{
+.container{
     max-width: 1000px;
+}
+
+.brand{
+
+    img{
+        height: 80px
+    }
 }
 
 header{
     @include flex(row,space-between);
     margin: 1rem 0;
+    height: 80px
 }
 
 

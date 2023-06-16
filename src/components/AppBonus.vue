@@ -60,22 +60,24 @@ div.content-container{
     .list-content{
         max-width: 1000px;
         display: flex;
-        justify-content: space-between;
+        padding: 0 2rem;
 
         li{
             display: flex;
+            width: calc(100% / 5);
             align-items: center;
 
             img{
                 margin-right: 1rem;
-                height: 40%;
+                height: 35%;
+            }
+            a{
+                color: white;
+                font-size: 0.65rem;
             }
             .power-visa{
                 height: 25%;
-            }
-            a{
-                font-size: 0.8rem;
-                color: white;
+
             }
         }
     }

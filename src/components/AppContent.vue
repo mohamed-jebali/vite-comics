@@ -9,7 +9,7 @@
                 :elementComics='item'
                 />
                 <button>
-                    Load More
+                    LOAD MORE
                 </button>
             </div>
         </div>
@@ -211,7 +211,7 @@ button{
 }
 .current-series{
     position: relative;
-    bottom: 50px;
+    bottom: 45px;
     font-size: 1.1rem;
 }
 
