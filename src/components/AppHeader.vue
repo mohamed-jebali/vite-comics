@@ -4,13 +4,11 @@
             <div class='brand'>
                 <img src="../assets/img/dc-logo.png" alt="dc-logo">
             </div>
-            <nav class='navbar-header'>
                 <ul class='flex'>
-                    <li v-for="liElements in headerList">
-                        {{liElements}}
+                    <li v-for="liElements,index in headerList" :class="liElements.active === true ? 'activeColor' : ''" @click='toggleActive(index)'>
+                        {{liElements.text}}
                     </li>
                 </ul>
-            </nav>
         </header>
     </div>
 </template>
@@ -19,12 +17,58 @@ import { createApp } from 'vue'
 export default{
     data(){
         return{
-            headerList:["CHARACTERS","COMICS","MOVIES","TV","GAMES","COLLECTIBLES","VIDEOS","FANS","NEWS","SHOP"]
+            headerList:[
+                {
+                    text:"CHARACTERS",
+                    active: false
+                },
+                {
+                    text:"COMICS",
+                    active: true,
+                },
+                {
+                    text:"MOVIES",
+                    active: false,
+                },
+                {
+                    text:"TV",
+                    active: false,
+                },
+                {
+                    text:"GAMES",
+                    active: false,
+                },
+                {
+                    text:"COLLECTIBLES",
+                    active: false,
+                },
+                {
+                    text:"VIDEOS",
+                    active: false,
+                },
+                {
+                    text:"FANS",
+                    active: false,
+                },
+                {
+                    text:"NEWS",
+                    active: false,
+                },
+                {
+                    text:"SHOP",
+                    active: false,
+                },
+            ],
+
         }
     },
-    methods:{
-
+    methods: {
+    toggleActive(index) {
+      this.headerList.forEach((item, i) => {
+        item.active = i === index;
+      });
     }
+  }
 }
 
 </script>
@@ -40,24 +84,25 @@ export default{
 .brand{
 
     img{
-        height: 80px
+        height: 60px
     }
 }
 
 header{
     @include flex(row,space-between);
-    margin: 1rem 0;
-    height: 80px
+    height: 90px;
 }
 
 
 ul{
+    height: 100%;
     li{
         @include flex();
         color : $DcNavColor;
         margin-right: 1.5rem;
         font-size: 0.65rem;
         font-weight: 600;
+        height: 100%;
 
         &:hover{
             text-decoration: underline;
@@ -65,6 +110,9 @@ ul{
     }
     li:nth-child(2){
             color: $DcColorBlue;
+        }
+        .activeColor{
+            border-bottom: 4px solid $DcColorBlue ;
         }
 }
 
